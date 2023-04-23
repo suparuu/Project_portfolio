@@ -45,7 +45,7 @@ export const Skills = () => {
       },
       {
         name: "REACT",
-        url: "/React.png",
+        url: "/react.png",
         detail: "React를 사용하여 여러가지 훅을 이용 할 수 있고, 컴포넌트를 분리하여 편하게 작업 할 수 있습니다. ",
         alt: "react이미지",
       },
