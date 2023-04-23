@@ -1,0 +1,207 @@
+.sectionBox {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    .leftBox {
+        width: 40%;
+        background-color: #344AB1;
+        position: relative;
+        padding: 40px;
+
+        .textBox {
+            width: 66%;
+            margin: 0 auto;
+            top: 15%;
+            position: relative;
+
+            .pjName {
+                white-space: nowrap;
+                font-size: 100px;
+                font-weight: 700;
+                color: #F8D448;
+                word-break: keep-all;
+                z-index: 2;
+                position: relative;
+
+            }
+
+            .pjDetail {
+                line-height: 1.5;
+                font-size: 20px;
+                word-break: keep-all;
+                color: #fff;
+                margin: 10% 0 10% 0;
+
+
+            }
+
+            .pjSkill {
+                font-size: 16px;
+                color: #fff;
+
+            }
+
+            .gotoProject {
+                border: 1px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                width: 12.5rem;
+                height: 3.125rem;
+                color: #fff;
+                margin-top: 20%;
+                cursor: pointer;
+
+                &:active {
+                    background-color: #F8D448;
+                    color: #344AB1;
+                }
+
+            }
+
+        }
+
+    }
+
+    .rightBox {
+        width: 60%;
+        position: relative;
+
+        .bigImg {
+            width: 100%;
+            object-fit: cover;
+            height: 100vh;
+        }
+
+        .smallImg {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .sectionBox {
+        max-width: 1024px;
+        height: auto;
+        background-color: #344AB1;
+        flex-direction: column-reverse;
+
+        .leftBox {
+            width: 100%;
+            background-color: #344AB1;
+            position: relative;
+            padding: 40px;
+
+            .textBox {
+                width: 66%;
+                margin: 0 auto;
+                top: 15%;
+                position: relative;
+
+                .pjName {
+                    white-space: nowrap;
+                    font-size: 80px;
+                    font-weight: 700;
+                    color: #F8D448;
+                    word-break: keep-all;
+                    z-index: 2;
+                    position: relative;
+                    text-align: center;
+
+                }
+
+                .pjDetail {
+                    line-height: 2.75rem;
+                    font-size: 20px;
+                    word-break: keep-all;
+                    color: #fff;
+                    margin: 10% 0 10% 0;
+                    text-align: center;
+
+
+                }
+
+                .pjSkill {
+                    font-size: 16px;
+                    color: #fff;
+                    text-align: center;
+
+
+                }
+
+                .gotoProject {
+                    margin: 0 auto;
+                    margin-top: 10%;
+
+
+                    &:active {
+                        background-color: #F8D448;
+                        color: #344AB1;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .rightBox {
+            width: 100%;
+            position: relative;
+            height: auto;
+
+            .bigImg {
+                width: 100%;
+                object-fit: cover;
+                height: auto
+            }
+        }
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    .sectionBox {
+        max-width: 768px;
+
+        .leftBox {
+            width: 100%;
+
+            .textBox {
+                width: 100%;
+                margin: 0 auto;
+                top: 15%;
+                position: relative;
+
+                .pjName {
+                    font-size: 28px;
+                    text-align: center;
+                    margin-bottom: 10%;
+
+                }
+
+                .pjDetail {
+                    display: none;
+
+
+                }
+
+
+
+            }
+
+        }
+
+        .rightBox {
+            width: 100%;
+        }
+    }
+}

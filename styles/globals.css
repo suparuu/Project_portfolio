@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+
+  }
+}
+
+@keyframes fadeani {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes linedown {
+  0% {}
+
+  100% {
+    transform: translateY(0.9rem) rotate(-45deg);
+  }
+}
+
+@keyframes lineup {
+  0% {}
+
+  100% {}
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes menuopen {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  font-family: 'Pretendard-Regular';
+
+}
+
+main {
+  height: 100vh;
+
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.animate {
+  animation: fadein 0.5s;
+  z-index: 2;
+}
+
+.swiper-thumbs {
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+  width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+
+  .swiper-thumbs {
+    display: none !important;
+  }
+
+  .animate {
+    animation: fadeani 0.5s;
+  }
+
+  .fadeout {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .linedown {
+    /* animation: linedown 0.5s; */
+    transform: translateY(0.9rem) rotate(-45deg);
+
+  }
+
+  .lineup {
+    /* animation: lineup 0.5s; */
+    transform: translateY(-0.4rem) rotate(45deg);
+
+  }
+
+  .active {
+    opacity: 1 !important;
+    top: 0 !important;
+
+  }
+
+
+}

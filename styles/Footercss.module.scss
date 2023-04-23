@@ -1,0 +1,62 @@
+$tablet : 1024px;
+$mobile : 768px;
+
+.section {
+    width: 100%;
+    height: 10vh;
+    background-color: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left {
+        width: 50%;
+        color: #F8D448;
+        font-size: 16px;
+
+        p {
+            text-align: center;
+        }
+
+    }
+
+    .right {
+        width: 50%;
+        color: #F8D448;
+        font-size: 16px;
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .section {
+        max-width: $tablet;
+
+        .left {
+            p {
+                text-align: center;
+            }
+        }
+
+        .right {
+            display: none;
+
+            p {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: $mobile) {
+    .section {
+        max-width: $mobile;
+    }
+
+}

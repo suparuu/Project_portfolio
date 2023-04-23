@@ -1,0 +1,132 @@
+.mainFlex {
+    width: 100%;
+    height: 100vh;
+
+    .shapeAndText {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        top: 30%;
+
+        .shapeBox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+
+            .shape {
+                width: 400px;
+                height: 320px;
+                clip-path: polygon(60% 0%, 100% 0%, 40% 100%, 0% 100%);
+                background-color: #F8D448;
+                z-index: 1;
+                transform: translateY(-7%);
+            }
+
+            .h1Text {
+                position: absolute;
+                color: #263A96;
+                z-index: 2;
+                font-size: 200px;
+                font-weight: bold;
+            }
+        }
+
+
+    }
+
+    .whoamI {
+        width: 18%;
+        top: 30%;
+        position: relative;
+        left: 55%;
+        color: #263A96;
+
+        .aspiration {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        .myName {
+            font-size: 20px;
+            font-weight: bold;
+
+            &::after {
+                content: '/ 프론트엔드 개발자';
+                font-weight: 100;
+            }
+        }
+    }
+
+}
+
+//테블릿 
+@media screen and (max-width:1024px) {
+    .mainFlex {
+        max-width: 1024px;
+
+        .shapeAndText {
+
+            .shapeBox {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+                .shape {
+                    width: 200px;
+                    height: 160px;
+                }
+
+                .h1Text {
+                    font-size: 100px;
+                }
+            }
+        }
+
+        .whoamI {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 auto;
+            left: 0;
+            top: 35%;
+
+            .aspiration {
+                font-size: 20px;
+            }
+
+            .myName {
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+    .mainFlex {
+        max-width: 768px;
+
+        .shapeAndText {
+
+            .shapeBox {
+                .shape {
+                    width: 160px;
+                    height: 128px;
+                }
+
+                .h1Text {
+                    font-size: 80px;
+                }
+            }
+        }
+
+        .whoamI {
+            width: 80%;
+        }
+    }
+}

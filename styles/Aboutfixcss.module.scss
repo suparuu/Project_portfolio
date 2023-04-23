@@ -1,0 +1,264 @@
+$tablet : 1024px;
+$mobile : 768px;
+
+.sectionBox {
+    width: 100%;
+    height: 100vh;
+
+    .textBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-top: 10%;
+        padding-bottom: 15%;
+
+        .text {
+            position: absolute;
+            color: #263A96;
+            font-size: 100px;
+            font-weight: bold;
+            z-index: 1;
+            font-family: 'Pretendard-Regular';
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 50%;
+                background-color: #F8D448;
+                z-index: -1;
+            }
+        }
+
+    }
+
+    .aboutBox {
+        display: flex;
+        width: 77%;
+        background-color: #F7F8FC;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        padding: 1.25rem;
+
+        .leftBox {
+            width: 30%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .myImg {
+                width: 70%;
+                border-radius: 20px;
+
+            }
+
+
+        }
+
+        .rightBox {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            word-break: keep-all;
+
+            .myName {
+                color: #263A96;
+                font-size: 42px;
+                font-weight: 700;
+            }
+
+            .relate {
+                color: #263A96;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .flexImg {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: .1875rem;
+            .imgBoxs{
+                display: flex;
+                width: 32%;
+                margin-bottom: 1rem;
+
+                .imgBox {
+                    width: 4rem;
+                    height: 4rem;
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+
+                }
+
+                .detailBox {
+                    width: 60%;
+                    color: #263A96;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    padding-left: 12px;
+
+                    p:nth-child(1) {
+                        font-weight: bold;
+                        font-size: 20px;
+
+                    }
+
+                }
+            }
+
+            }
+
+
+        }
+    }
+}
+
+
+//테블릿
+@media screen and (max-width: $tablet) {
+    .sectionBox {
+        max-width: $tablet;
+        height: auto;
+
+        .textBox {
+
+            .text {
+                font-size: 80px;
+            }
+
+        }
+
+        .aboutBox {
+            flex-direction: column;
+            padding: 4.25rem;
+            margin-top: 10%;
+
+            .leftBox {
+                width: 50%;
+            }
+
+            .rightBox {
+                width: 100%;
+                align-items: center;
+                margin-top: 10%;
+
+                .myName {
+                    font-size: 30px;
+                    margin-bottom: 10%;
+                    text-align: center;
+
+                }
+
+                .relate {
+                    margin-bottom: 5%;
+                    text-align: center;
+
+                }
+
+                
+
+
+            }
+        }
+    }
+
+}
+
+//모바일 컨펌후 수정
+@media screen and (max-width:768px) {
+    .sectionBox {
+        max-width: 768px;
+        height: auto;
+
+        .textBox {
+            .text {
+                font-size: 60px;
+            }
+
+        }
+
+        .aboutBox {
+            flex-direction: column;
+            padding: 20px;
+            margin-top: 20%;
+
+            .leftBox {
+                width: 100%;
+            }
+
+            .rightBox {
+                width: 100%;
+                align-items: center;
+                margin-top: 10%;
+
+
+                .myName {
+                    font-size: 30px;
+                    margin-bottom: 10%;
+                    text-align: center;
+                }
+
+                .relate {
+                    margin-bottom: 5%;
+                    text-align: center;
+
+                }
+
+                .flexImg {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                .imgBoxs{
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 1rem;
+    
+                    .imgBox {
+                        width: 20%;
+                    height: 100%;
+                        
+                        img {
+                            width: 100%;
+                            object-fit: contain;
+                        }
+    
+                    }
+    
+                    .detailBox {
+                        width: 80%;
+                        color: #263A96;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding-left: 12px;
+    
+                        p:nth-child(1) {
+                            font-weight: bold;
+                            font-size: 20px;
+    
+                        }
+    
+                    }
+                }
+                
+
+
+            }
+        }
+    }
+    }
+}
