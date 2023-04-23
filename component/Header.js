@@ -23,30 +23,26 @@ export const Header = ({ sendP }) => {
     tabletSize();
  
   }, []); //헤더 반응형
-
   function view(i) {
-    let child = mobHeader.current.children;
 
     sendP && sendP[i].scrollIntoView({ behavior: "smooth" });
-    menuevent.current.classList.remove("active");
-    mobHeader.current.classList.remove("animate");
-    child[0].classList.remove("linedown");
-    child[1].classList.remove("fadeout");
-    child[2].classList.remove("lineup");
+  
 
   }
 
   function handleClick() {
-    let child = mobHeader.current.children;
+    let child = mobHeader && mobHeader.current.children;
+    
     let i = 0;
     for (i = 0; i < 3; i++) {
       if (i === 0) {
         child[i].classList.toggle("linedown");
       } else if (i === 1) {
         child[i].classList.toggle("fadeout");
-      } else {
+      } else if( i === 2){
         child[i].classList.toggle("lineup");
-      }
+      } 
+      
     }
     mobHeader.current.classList.toggle("animate");
     menuevent.current.classList.toggle("active");
