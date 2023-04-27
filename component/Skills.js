@@ -64,7 +64,7 @@ export const Skills = () => {
       {
         name: "GITHUB",
         url: "/github.png",
-        detail: "Github를 통해 프로젝트들을 저장하고 있습니다.",
+        detail: "Github를 통해 프로젝트들을 저장 및 관리를 하고 있습니다.",
         alt: "github이미지",
       },
       {
