@@ -56,6 +56,18 @@ export const Skills = () => {
         alt: "next.js이미지",
       },
       {
+        name: "TYPESCRIPT",
+        url: "/typescript.png",
+        detail: "Type을 정해 ",
+        alt: "next.js이미지",
+      },
+      {
+        name: "REACT-NATIVE",
+        url: "/react.png",
+        detail: "React-Native를 통해 ",
+        alt: "next.js이미지",
+      },
+      {
         name: "VUE.JS",
         url: "/Vue.png",
         detail: "Vue를 어떻게 사용하는지 경험 해 보았고, 공부중에 있습니다.",
