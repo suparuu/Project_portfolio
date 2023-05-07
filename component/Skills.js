@@ -58,14 +58,8 @@ export const Skills = () => {
       {
         name: "TYPESCRIPT",
         url: "/typescript.png",
-        detail: "Type을 정해 ",
-        alt: "next.js이미지",
-      },
-      {
-        name: "REACT-NATIVE",
-        url: "/react.png",
-        detail: "React-Native를 통해 ",
-        alt: "next.js이미지",
+        detail: "Typescript를 사용하여 type을 정해 사전에 오류를 확인할 수 있습니다.",
+        alt: "typescript이미지",
       },
       {
         name: "VUE.JS",
